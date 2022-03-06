@@ -1,0 +1,79 @@
+<html>
+    <style>
+        header
+        {
+            font-family: "Lucida Sans Typewriter",Georgia,Arial;
+        }
+        headertext
+        {
+            background: bisque;
+            width: 100%;
+            text-align: center;
+            position:absolute;
+            left:50%;
+            transform: translate(-50%);
+        }
+        image1
+        {
+            position: absolute;
+            top: 3%;
+            left: 3%;
+        }
+        image2
+        {
+            position: absolute;
+            top: 3%;
+            right: 3%;
+        }
+        div
+        {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background: #999FF0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 200px;
+            border: 2px solid gray;
+        }
+        
+    </style>
+    <head>
+        <header>
+            <headertext>
+                <h1>IT Carlow</h1>
+                <p>Clubs and Societies</p>
+            </headertext>
+            <image1>
+                <img src="logo.png">
+            </image1>
+            <image2>
+                <img src="50years.png">;
+            </image2>
+        </header>
+    </head>
+    <body>
+        <div>
+			<form action="login.php" method="Post">
+            <label for="Username">Username: </label>
+            <input type="text" id="username" name="username"/><br>
+            <br>
+            <label for="Password">Password: </label>
+            <input type="password" id="password" name="password"/><br>
+            <br>
+			
+			<input type="Submit" value="Log In"/>
+			</form>
+            <a href="createAccount.html">
+                <button>Create Account</button>
+            </a>
+			<br>
+			<br>
+			<a href="loggedData.php">
+				<button>View Database Contents</button>
+			</a>
+        </div>
+    </body>
+</html>

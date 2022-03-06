@@ -1,0 +1,102 @@
+<html>
+    <style>
+        header
+        {
+            font-family: "Lucida Sans Typewriter",Georgia,Arial;
+        }
+        headertext
+        {
+            background: bisque;
+            width: 100%;
+            text-align: center;
+            position:absolute;
+            left:50%;
+            transform: translate(-50%);
+        }
+        image1
+        {
+            position: absolute;
+            top: 3%;
+            left: 3%;
+        }
+        image2
+        {
+            position: absolute;
+            top: 3%;
+            right: 3%;
+        }
+        div
+        {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background: #999FF0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            border: 2px solid gray;
+        }
+        
+    </style>
+    <head>
+        <header>
+            <headertext>
+                <h1>IT Carlow</h1>
+                <p>Clubs and Societies</p>
+            </headertext>
+            <image1>
+                <img src="logo.png">
+            </image1>
+            <image2>
+                <img src="50years.png">;
+            </image2>
+        </header>
+    </head>
+    <body>
+        <div>
+            <form action="loggedData.php" method="Get">
+                <label for="Username">Username: </label>
+                <input type="text" id="username" name="username"/><br>
+                <br>
+                <label for="Password">Password: </label>
+                <input type="password" id="password" name="password"/><br>
+                <br>
+                <label for="confirmPassword">Confirm Password: </label>
+                <input type="password" id="confirmPassword" name="confirmPassword"/><br>
+                <br>
+                <label for="studentID">Student ID: </label>
+                <input type="text" id="studentID" name="studentID"/><br>
+                <br>
+                <label for="phoneNo">Phone Number: </label>
+                <input type="number" id="phoneNo" name="phoneNo"/><br>
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email"/><br>
+                <br>
+                <label for="dob">Date of Birth: </label>
+                <input type="date" id="dob" name="dob"/><br>
+                <br>
+                <label for="img">Select Image: </label>
+                <input type="file" id="img" name="img" accept="image/*"/><br>
+                <br>
+                <label for="medicalDecleration">Medical Decleration: </label>
+                <input type="text" id="medicalDecleration" name="medicalDecleration"/><br>
+                <br>
+                <label for="doctorInformation">Doctor Information: </label>
+                <input type="text" id="doctorInformation" name="doctorInformation"/><br>
+                <br>
+				<label for="nextOfKinName">Next of Kin Name: </label>
+                <input type="text" id="nextOfKinName" name="nextOfKinName"/><br>
+                <br>
+                <label for="nextOfKinContact">Next of Kin Contact Information: </label>
+                <input type="text" id="nextOfKinContact" name="nextOfKinContact"/><br>
+                <br>
+                <input type="submit" value="Submit"/>
+				<input type="reset" value="Clear"/>
+            </form>
+        </div>
+
+    </body>
+</html>
